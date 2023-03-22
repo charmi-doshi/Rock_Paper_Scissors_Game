@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(38, 41, 48);
+}
+
+.play{
+    color:#F6F1F1
+}
+.scissors{
+        width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    background-color: #FFD966;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paper{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    background-color: #F6F1F1;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rock{
+    width:10rem;
+    height:10rem;
+    border-radius: 50%;
+    background-color: #E49393;
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-paper{
+ padding:3rem;
+    border-radius: 50%;
+    background: url("./hand_paper_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-scissors{
+    padding:3rem;
+    background: url("./hand_scissors_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon-rock{
+    padding:3rem;
+    background: url("./hand_rock_icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
