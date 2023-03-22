@@ -13,8 +13,10 @@ function App() {
 
   return (
     <div className='container'>
+      <h1>ROCK-PAPER-SCISSORS GAME</h1>
       <Header score={score}/>  
           <Routes>
+            
             <Route path="/" element={<Play setMyChoice={setMyChoice}/>}/>
             
           

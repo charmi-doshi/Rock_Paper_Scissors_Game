@@ -46,16 +46,20 @@ function Game({score,myChoice,setScore}) {
         ()=>{
             Result()
         },[house])
+
     return (  <div className='game'>
-        my choice:{myChoice} <br></br>
-        House choice:{house}<br></br>
 
-        Result:
-        {playerWin == "win" && <h2>You win</h2>}
-        {playerWin == "lose" && <h2>You lose</h2>}
+        <h3>My choice:{myChoice} </h3>
+        <h3>House choice:{house}</h3>
+
+        <div className='result'>
+        <h2> Result:</h2>
+        {playerWin == "win" && <h2>You win !!</h2>}
+        {playerWin == "lose" && <h2>You lose ' _ '</h2>}
         {playerWin == "draw" && <h2>Draw</h2>}
+        </div>
 
-        <Link to="/" onClick={()=> setHouse()}>Play Again</Link>
+        <Link to="/" className="play-again" onClick={()=> setHouse()}>Play Again</Link>
     </div>);
 }
 

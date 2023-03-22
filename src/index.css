@@ -1,56 +1,90 @@
-body{
-    background-color: rgb(38, 41, 48);
+body {
+  background-color: rgb(38, 41, 48);
 }
 
-.play{
-    color:#F6F1F1
+.container {
+  color: #f6f1f1;
+  text-align: center;
 }
-.scissors{
-        width:10rem;
-    height:10rem;
-    border-radius: 50%;
-    background-color: #FFD966;
-    border: 10px solid black;
+.play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.game{
     display: flex;
-    align-items: center;
-    justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding:2rem;
+  border: 2px solid #fff;
 }
-.paper{
-    width:10rem;
-    height:10rem;
-    border-radius: 50%;
-    background-color: #F6F1F1;
-    border: 10px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.result{
+    margin-top: 2rem;
+    border: 2px dotted #fff;
 }
-.rock{
-    width:10rem;
-    height:10rem;
-    border-radius: 50%;
-    background-color: #E49393;
-    border: 10px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+h2{
+    text-align: center;
+    margin:3rem;
 }
-.icon-paper{
- padding:3rem;
-    border-radius: 50%;
-    background: url("./hand_paper_icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.scissors {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #ffd966;
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon-scissors{
-    padding:3rem;
-    background: url("./hand_scissors_icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.paper {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #f6f1f1;
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon-rock{
-    padding:3rem;
-    background: url("./hand_rock_icon.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.rock {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: #e49393;
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-paper {
+  padding: 3rem;
+  border-radius: 50%;
+  background: url("./hand_paper_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-scissors {
+  padding: 3rem;
+  background: url("./hand_scissors_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.icon-rock {
+  padding: 3rem;
+  background: url("./hand_rock_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.play-again {
+  width: 10rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 7px;
+  background-color: #c9eeff;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }
